@@ -1,5 +1,4 @@
 const { Company } = require("../models/index.js");
-const { post } = require("../routers/index.js");
 
 module.exports = {
   create: (body) => new Company(body).save(),

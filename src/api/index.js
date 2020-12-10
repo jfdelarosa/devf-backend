@@ -6,7 +6,6 @@ const router = require("../routers/index.js");
 const { dateNow } = require("../middlewares/index.js");
 
 const app = express();
-const PORT = process.env.PORT || 3006;
 
 app.use(express.json({ extended: true }));
 app.use(morgan("dev"));
@@ -23,5 +22,4 @@ app.use(celebrate.errors());
 
 module.exports = {
   app,
-  PORT,
 };

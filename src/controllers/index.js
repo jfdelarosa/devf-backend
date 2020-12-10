@@ -1,7 +1,7 @@
-const AuthController = require("./AuthController.js");
-const UserController = require("./UserController.js");
-const PostController = require("./PostController.js");
-const CompanyController = require("./CompanyController.js");
+const AuthController = require("./AuthController");
+const UserController = require("./UserController");
+const PostController = require("./PostController");
+const CompanyController = require("./CompanyController");
 
 module.exports = {
   AuthController,

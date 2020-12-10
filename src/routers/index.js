@@ -1,8 +1,8 @@
 const express = require("express");
-const AuthRouter = require("./AuthRouter.js");
-const UserRouter = require("./UserRouter.js");
-const PostRouter = require("./PostRouter.js");
-const CompanyRouter = require("./CompanyRouter.js");
+const AuthRouter = require("./AuthRouter");
+const UserRouter = require("./UserRouter");
+const PostRouter = require("./PostRouter");
+const CompanyRouter = require("./CompanyRouter");
 
 const router = express.Router();
 
