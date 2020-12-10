@@ -1,11 +1,11 @@
 const User = require("./User");
 const Post = require("./Post");
-const Companies = require("./Companies");
-const Reviews = require("./Reviews");
+const Company = require("./Companies");
+const Review = require("./Reviews");
 
 module.exports = {
   User,
   Post,
-  Companies,
-  Reviews,
+  Company,
+  Review,
 };
