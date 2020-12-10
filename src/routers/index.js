@@ -5,8 +5,8 @@ const PostRouter = require("./PostRouter.js");
 
 const router = express.Router();
 
-router.use(AuthRouter);
-router.use(UserRouter);
-router.use(PostRouter);
+router.use("/auth", AuthRouter);
+router.use("/user", UserRouter);
+router.use("/post", PostRouter);
 
 module.exports = router;

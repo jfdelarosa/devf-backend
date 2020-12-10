@@ -17,7 +17,7 @@ module.exports = {
       const payload = await AuthService.login(email, password);
 
       if (payload) {
-        return res.status(200).json(payload);
+        return res.status(200).json({ token: payload });
       }
 
       res.status(401).json({ error: "Login failed" });

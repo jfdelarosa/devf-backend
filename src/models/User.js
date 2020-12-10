@@ -1,4 +1,6 @@
 const { Schema, model } = require("mongoose");
+const bcrypt = require("bcrypt");
+const SALT_WORK_FACTOR = 10;
 
 const userSchema = new Schema(
   {
@@ -37,6 +39,19 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-const User = model("Model", userSchema, "Models");
+userSchema.pre("save", async function (next) {
+  try {
+    const user = this;
+    if (!user.isModified("password")) return next();
+    const salt = await bcrypt.genSalt(SALT_WORK_FACTOR);
+    const hash = await bcrypt.hash(user.password, salt);
+    user.password = hash;
+    return next();
+  } catch (error) {
+    next(error);
+  }
+});
+
+const User = model("User", userSchema, "Users");
 
 module.exports = User;
