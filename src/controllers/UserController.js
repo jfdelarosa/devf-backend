@@ -1,4 +1,4 @@
-const { UserService } = require("../services/index.js");
+const { UserService } = require("../services/index");
 
 module.exports = {
   list: async (req, res, next) => {

@@ -2,8 +2,8 @@ const express = require("express");
 const morgan = require("morgan");
 const celebrate = require("celebrate");
 const cors = require("cors");
-const router = require("../routers/index.js");
-const { dateNow } = require("../middlewares/index.js");
+const router = require("../routers/index");
+const { dateNow } = require("../middlewares/index");
 
 const app = express();
 

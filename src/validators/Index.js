@@ -1,5 +1,5 @@
-const AuthValidator = require("./AuthValidator.js");
-const CompanyValidator = require("./CompanyValidator.js");
+const AuthValidator = require("./AuthValidator");
+const CompanyValidator = require("./CompanyValidator");
 
 module.exports = {
   AuthValidator,

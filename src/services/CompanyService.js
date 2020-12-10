@@ -1,4 +1,4 @@
-const { Company } = require("../models/index.js");
+const { Company } = require("../models/index");
 
 module.exports = {
   create: (body) => new Company(body).save(),

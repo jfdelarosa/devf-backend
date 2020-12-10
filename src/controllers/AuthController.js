@@ -1,4 +1,4 @@
-const { AuthService } = require("../services/index.js");
+const { AuthService } = require("../services/index");
 
 module.exports = {
   signup: async (req, res, next) => {

@@ -1,4 +1,4 @@
-const { User } = require("../models/index.js");
+const { User } = require("../models/index");
 
 module.exports = {
   list: () => User.find(),

@@ -1,6 +1,6 @@
 const express = require("express");
-const { CompanyController } = require("../controllers/index.js");
-const { CompanyValidator } = require("../validators/index.js");
+const { CompanyController } = require("../controllers/index");
+const { CompanyValidator } = require("../validators/index");
 
 const router = express.Router();
 

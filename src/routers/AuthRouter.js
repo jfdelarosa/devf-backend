@@ -1,6 +1,6 @@
 const express = require("express");
-const { AuthController } = require("../controllers/index.js");
-const { AuthValidator } = require("../validators/index.js");
+const { AuthController } = require("../controllers/index");
+const { AuthValidator } = require("../validators/index");
 
 const router = express.Router();
 
