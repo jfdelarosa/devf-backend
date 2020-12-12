@@ -3,9 +3,9 @@ const { PostController } = require("../controllers/index");
 
 const router = express.Router();
 
-router.get("/posts", PostController.list);
-router.post("/posts", PostController.create);
-router.patch("/posts/:id/interaction", PostController.interact);
-router.patch("/posts/:id/edit", PostController.update);
+router.get("/", PostController.list);
+router.post("/", PostController.create);
+router.patch("/:id/interaction", PostController.interact);
+router.patch("/:id/edit", PostController.update);
 
 module.exports = router;

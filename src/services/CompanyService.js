@@ -17,4 +17,17 @@ module.exports = {
       throw new Error(error);
     }
   },
+  find: async (id) => {
+    try {
+      const result = await Company.findById(id);
+
+      if (result) {
+        return result;
+      }
+
+      throw new Error("Cannot find companies");
+    } catch (error) {
+      throw new Error(error);
+    }
+  },
 };
